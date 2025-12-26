@@ -294,7 +294,7 @@ button {
 .banner_taital {
     width: 100%;
     font-size: 50px;
-    color: #ffffff;
+    color: #dedede;
     font-weight: bold;
     line-height: 60px;
 }
@@ -302,7 +302,7 @@ button {
 .banner_text{
     width: 100%;
     font-size: 16px;
-    color: #ffffff;
+    color: #dedede;
     margin: 0px;
 }
 
@@ -517,6 +517,38 @@ button {
 
 /* about section end */
 
+
+/ * stats section start * /
+
+.stats_section {
+    width: 100%;
+    float: left;
+}
+
+.stats_taital {
+    width: 100%;
+    font-size: 40px;
+    color: #1b1b1b;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.stats_taital::after {
+    position: absolute;
+    content: '';
+    width: 80px;
+    border: 4px solid #224afc;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* stats section end */
+
 /* models section start */
 
 .models_section {
@@ -609,7 +641,7 @@ button {
 
 .read_btn a:hover {
     color: #fefefd;
-    background-color: #474646;
+    background-color: #fc2222;
 }
 
 .arrow_icon {
@@ -729,7 +761,7 @@ button {
 
 .read_bt a:hover {
     color: #fefefd;
-    background-color: #474646;
+    background-color: #fc2222;
 }
 
 .blog_img {
