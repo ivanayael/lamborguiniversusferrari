@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo con plantas */
+#background {
+    position: fixed;
+    inset: 0;
+    background: url("27471.jpg") center/cover no-repeat;
+    z-index: -2;
+}
+
+/* HUD */
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+#score {
+    background: white;
+    padding: 6px 14px;
+    border-radius: 12px;
+    margin-bottom: 6px;
+}
+
+#start {
+    padding: 6px 18px;
+    cursor: pointer;
+}
+
+/* Juego */
+#game {
+    position: relative;
+    width: 360px;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* Carretera */
+#road {
+    position: absolute;
+    width: 360px;
+    height: 300%;
+    background: url("road.png") repeat-y center;
+    background-size: contain;
+    top: -200%;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+/* Autos */
+#mycar {
+    position: absolute;
+    bottom: 20px;
+    left: 140px;
+}
+
+#mycar img,
+.enemy img {
+    width: 80px;
+}
+
+.enemy {
+    position: absolute;
+    top: -150px;
+    display: none;
+}
+
+.ghost {
+    position: absolute;
+    bottom: 100px;
+    left: 140px;
+    opacity: 0.5;
+}
+.ghost img {
+    width: 80px;
+    transform: scaleX(-1);
+}
+
+
+
+/* Animaciones */
+@keyframes moveRoad {
+    0% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: 600px;
+    }
+}
+#road.move {
+    animation: moveRoad 1s linear infinite;
+}
+@keyframes moveEnemy {
+    0% {
+        top: -150px;
+    }
+    100% {
+        top: 650px;
+    }
+}
+.enemy.move {
+    animation: moveEnemy 3s linear infinite;
+}
+.enemy.fast {
+    animation-duration: 2s;
+}
+.enemy.slow {
+    animation-duration: 4s;
+}
+.enemy.medium {
+    animation-duration: 3s;
+}
+.enemy.hide {
+    display: none;
+}
+.enemy.show {
+    display: block;
+}
+.enemy.crash {
+    animation: crashEnemy 0.5s forwards;
+}
+@keyframes crashEnemy {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}
+@keyframes crashMyCar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#mycar.crash {
+    animation: crashMyCar 0.5s forwards;
+}
+@keyframes flashScreen {
+    0% {
+        background-color: rgba(255, 0, 0, 0);
+    }
+    50% {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+    100% {
+        background-color: rgba(255, 0, 0, 0);
+    }
+}
+#game.flash {
+    animation: flashScreen 0.5s;
+}
+@keyframes gameOverScreen {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
