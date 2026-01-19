@@ -1,56 +1,40 @@
-# 🏎️ Lamborghini vs Ferrari - Web Comparison Project
+# 🏎️ Lamborghini vs Ferrari: The Obstacle Race
 
-[![GitHub license](https://img.shields.io/github/license/ivanayael/lamborguiniversusferrari?style=flat-square)](https://github.com/ivanayael/lamborguiniversusferrari/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/ivanayael/lamborguiniversusferrari?style=flat-square)](https://github.com/ivanayael/lamborguiniversusferrari/stargazers)
-[![GitHub last commit](https://img.shields.io/github/last-commit/ivanayael/lamborguiniversusferrari?style=flat-square)](https://github.com/ivanayael/lamborguiniversusferrari/commits/main)
+![Versión](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Licencia](https://img.shields.io/badge/license-MIT-green.svg)
+![Tecnología](https://img.shields.io/badge/tech-JavaScript-yellow.svg)
 
-Una experiencia interactiva y visual que pone frente a frente a dos de los gigantes más icónicos de la industria automotriz: **Lamborghini** y **Ferrari**. Este proyecto busca explorar el diseño, la potencia y la historia de estas marcas a través de una interfaz moderna.
+**Lamborghini vs Ferrari** es un videojuego arcade de carreras desarrollado en JavaScript. Pon a prueba tus reflejos controlando un Ferrari en una persecución de alta velocidad contra un Lamborghini, esquivando obstáculos que pondrán a prueba tu destreza al volante.
 
-## 🚀 Tecnologías Utilizadas
+---
 
-Este proyecto fue desarrollado utilizando el siguiente stack tecnológico:
+## 🎮 Jugabilidad
 
-* **HTML5** - Estructura semántica.
-* **CSS3** - Diseño responsivo, animaciones personalizadas y Flexbox/Grid.
-* **JavaScript** - Interactividad y lógica de comparación.
-* *[Opcional: Si usas algún framework como Bootstrap o React, añádelo aquí]*
+El objetivo es simple: alcanzar al Lamborghini o superar su puntuación esquivando los obstáculos que aparecen en la pista. A medida que avanzas, la velocidad aumenta, elevando la dificultad.
 
-## ✨ Características
+### 🕹️ Controles
+* **Flecha Izquierda : Mueve a la izquierda.
+* **Flecha Derecha : Mueve a la derecha.
 
-- 📊 **Comparativa Técnica:** Visualización de especificaciones como velocidad máxima, motor y aceleración.
-- 📱 **Diseño Responsive:** Optimizado para dispositivos móviles, tablets y escritorio.
-- 🖼️ **Galería Visual:** Imágenes de alta calidad de los modelos más emblemáticos.
-- 🌓 **Interfaz de Alto Contraste:** Inspirada en la elegancia de ambas marcas (tonos oscuros, rojos y amarillos).
+---
 
-## 🛠️ Instalación y Uso
+## 🚀 Características Principales
 
-Si deseas ejecutar este proyecto localmente, sigue estos pasos:
+* **Mecánica de Colisiones:** Sistema preciso para detectar impactos con obstáculos.
+* **Scroll Infinito:** Fondo dinámico que simula velocidad constante.
+* **IA Enemiga:** El Lamborghini actúa como el rival a batir, manteniendo una distancia desafiante.
+* **Sistema de Puntuación:** Registro de distancia recorrida o puntos por obstáculos esquivados.
+* **Diseño Retro-Arcade:** Estética inspirada en los clásicos juegos de carreras de 8/16 bits.
 
-1.  **Clona el repositorio:**
-    ```bash
-    git clone [https://github.com/ivanayael/lamborguiniversusferrari.git](https://github.com/ivanayael/lamborguiniversusferrari.git)
-    ```
-2.  **Navega al directorio del proyecto:**
-    ```bash
-    cd lamborguiniversusferrari
-    ```
-3.  **Abre el archivo principal:**
-    Simplemente abre el archivo `index.html` en tu navegador preferido o usa una extensión como *Live Server* en VS Code.
+---
 
-## 📸 Capturas de Pantalla
+## 🛠️ Instalación y Configuración
 
-*(Próximamente)*
-> **Nota:** Puedes añadir imágenes aquí para mostrar tu trabajo visualmente.
+No requiere instalación compleja, solo un navegador web moderno.
 
-## 🤝 Contribuciones
-
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar la comparativa o añadir nuevos modelos:
-
-1. Haz un **Fork** del proyecto.
-2. Crea una nueva rama (`git checkout -b feature/NuevaMejora`).
-3. Realiza tus cambios y haz **Commit** (`git commit -m 'Añadida nueva funcionalidad'`).
-4. Sube tus cambios (**Push**) (`git push origin feature/NuevaMejora`).
-5. Abre un **Pull Request**.
+1. **Clona este repositorio:**
+   ```bash
+   git clone [https://github.com/ivanayael/lamborguiniversusferrari.git](https://github.com/ivanayael/lamborguiniversusferrari.git)
 
 ## 👤 Autor
 
